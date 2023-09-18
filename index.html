@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paypal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="fejlec">
+            <img src="Képernyőfotó 2023-09-18 - 2.50.54.png" alt="">
+            <h1>Home</h1>
+            <h1 class="active">Send and Request</h1>
+            <h1>Wallet</h1>
+            <h1>Activity</h1>
+            <h1>Help</h1>
+        </div>
+        <div class="logout">
+            <img src="ikonok1.png" class="icon">
+            <h1>Logout</h1>
+            
+        </div>
+    </div>
+    <div class="elemek">
+        <div class="kereskedes">
+            <div class="kep">
+                <img src="paypal-logo-transparent-free-png.webp" alt="" class="pplogo">
+            </div>
+            <h2>Paypal Balance</h2>
+            <div class="balance">
+        
+                <h2 class="toke" id="toke">10000000</h2><h2 class="EUR">EUR</h2>
+                
+            </div>
+            <p>Available</p>
+            <h2>Send To</h2>
+            <div class="input">
+                <input type="text" name="Name" placeholder="Email Adress or Name" id="name" >
+            </div>
+            <h2>Amount</h2>
+            <div class="input">
+                <input type="text" placeholder="Enter the Amount" id="utalas" value="">
+            </div>
+            <div class="gombtarto">
+                <div class="gomb" id="gomb">
+                    Transfer
+                </div>
+                <img src="aaasd.png" alt="" class="asdd">  
+            </div>
+
+        
+            
+
+        
+            
+        </div>
+        <div class="igazolas" id="igazol">
+        
+        </div>
+        <div class="display" id="display">
+            <div class="loading" >
+                <img src="paypal-logo-transparent-free-png.webp" class="loader-img">
+                <div class="loader"></div>
+                <img src="pipa.png" alt="" class="pipa" id="pipa">
+            </div>
+            <h2 id="utalas-statusz">Waiting for transaction..</h2>
+            <div class="utalas-kozlemeny">
+                <h2>Amount:</h2>
+                <h2 id="loader-amount"></h2>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+<script src="java.js"></script>
+</html>

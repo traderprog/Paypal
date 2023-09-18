@@ -1,0 +1,281 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+    font-family: customfont;
+    background-color: rgb(250, 248, 245);
+    color: rgb(210, 241, 254);
+}
+
+@font-face {
+    font-family: customfont;
+    src: url(PayPalSansBig-Light-Klim.ttf);
+}
+@font-face {
+    font-family: customfont1;
+    src: url(PayPalSansBig-Light-Klim.woff);
+}
+
+@font-face {
+    font-family: custom2;
+    src: url(PayPalSansBig-Regular-Klim.ttf);
+}
+
+
+.fejlec{
+    width: 100%;
+    height: 128px;
+    background-color: rgb(22, 48, 140);
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 60px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 22px;
+    margin: 30px;
+}
+
+.active{
+    display: flex;
+    font-family: customfont1;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 58px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(41, 68, 152) ;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 128px;
+    background-color: rgb(22, 48, 140);
+}
+
+.logout{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 130px;
+}
+.elemek{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kereskedes{
+    margin-top: 100px;
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
+    border: 1px solid rgb(219, 217, 217);
+    background-color: white;
+    
+}
+.kep{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+.pplogo{
+    width: 200px;
+    height: 200px;
+    
+}
+
+h2{
+    color: rgb(1, 21, 52);
+    font-family: custom2;
+    font-size: 25px;
+    margin-left: 40px;
+}
+.balance{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin-top: -20px;
+}
+
+.EUR{
+    margin-left: 20px;
+    font-size: 45px;
+}
+.toke{
+    font-size: 45px;
+}
+p{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: -20px;
+    color: lightblue;
+}
+
+input{
+    font-size: 25px;
+    all: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    
+  
+    
+}
+h6{
+    max-height: 20px;
+    width: 100%;
+    margin: 0;
+    
+}
+.input{
+    overflow: hidden;
+    color: grey;
+    margin-left: 90px;
+    color: gray;
+    height: 50px;
+    width: 70%;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+.input:hover{
+    border: 3px solid rgb(22, 48, 140);
+}
+.gombtarto{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+} 
+
+
+.gomb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(22, 48, 140);
+    color: white;
+    font-size: 25px;
+    font-family: custom2;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.gomb:hover{
+    transform: scale(1.05);
+}
+
+
+.igazolas{
+    width: 100%;
+    height: 2000px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+    justify-content: center;
+    
+
+}
+
+.display{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    animation: none;
+    overflow: hidden;
+    
+    
+}
+@keyframes kesleltetes {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.loading{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+    
+    
+}
+
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid white;
+    border-right-color: rgb(22, 48, 140);
+    border-bottom-color: rgb(22, 48, 140);
+    border-top-color: rgb(22, 48, 140);
+    margin-top: 100px;
+    animation: rotate 0.6s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.utalas-kozlemeny{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.loader-img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+    top: 50px;
+}
+
+.pipa{
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    width: 250px;
+    height: 250px;
+    display:"";
+}
+.asdd{
+    position: absolute;
+    transform: scale(7);
+    top: 500px;
+    left: 300px;
+    border-radius: 3px;
+}
